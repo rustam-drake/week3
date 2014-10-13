@@ -1,0 +1,40 @@
+//quastion 2
+
+println("type your equation in the format of: A *operator* B");
+String str=System.console().readLine();
+char ch;
+for (int i=0;i<str.length();i++){
+	ch=str.charAt(i);
+	if(ch=='+'){
+		String str1=str.substring(0,i);
+		double a=Double.parseDouble(str1);
+		String str2=str.substring(i+1);
+		double b=Double.parseDouble(str2);
+		//int c = (int) (a+b)/1;
+		println(a+b);
+		
+	}else if(ch=='-'){
+		String str1=str.substring(0,i);
+		double a=Double.parseDouble(str1);
+		String str2=str.substring(i+1);
+		double b=Double.parseDouble(str2);
+		//int c = (int) (a+b)/1;
+		println(a-b);
+		
+	}else if(ch=='*'){
+		String str1=str.substring(0,i);
+		double a=Double.parseDouble(str1);
+		String str2=str.substring(i+1);
+		double b=Double.parseDouble(str2);
+		//int c = (int) (a+b)/1;
+		println(a*b);
+	}else if(ch=='/'){
+		String str1=str.substring(0,i);
+		double a=Double.parseDouble(str1);
+		String str2=str.substring(i+1);
+		double b=Double.parseDouble(str2);
+		//int c = (int) (a+b)/1;
+		println(a/b);
+	}
+}
+//double aa=Double.parseDouble(a);
