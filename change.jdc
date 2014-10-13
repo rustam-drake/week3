@@ -1,0 +1,23 @@
+//question 3
+
+println("enter the price of the item");
+String itemStr=System.console().readLine();
+double item=Double.parseDouble(itemStr);
+
+
+boolean finished=false;
+
+println("Enter the amount of many given to the shop keaper");
+String moneyStr=System.console().readLine();
+double money=Double.parseDouble(moneyStr);
+double change=item-money;
+while(change>0){
+	println("not enough is given");
+	println("Enter the amount of many given to the shop keaper");
+	moneyStr=System.console().readLine();
+	money=Double.parseDouble(moneyStr);
+	change=item-money;
+}
+//println("enough money is given");
+int intChange = Math.abs((int)change);
+println(intChange);
