@@ -1,0 +1,28 @@
+//quation 1
+
+println("Choose the first number");
+String a=System.console().readLine();
+double aa=Double.parseDouble(a);
+println("Choose the second number");
+String b=System.console().readLine();
+double bb=Double.parseDouble(b);
+
+println("choose an operation by pressing from 1-4");
+println("1. plus");
+println("2. minus");
+println("3.divide");
+println("4.multiply");
+String op=System.console().readLine();
+int opi=Integer.parseInt(op);
+if(opi==1){
+	println(aa+bb);
+}
+else if  (opi==2){
+	println(aa-bb);
+}
+else if  (opi==3){
+	println(aa/bb);
+}
+else if  (opi==4){
+	println(aa*bb);
+}else println("envalid number for operator was chosen");
