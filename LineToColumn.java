@@ -15,7 +15,6 @@ public class LineToColumn {
 			}else{	
 				System.out.println(newStr);
 				newStr="";
-				//i++;
 			}
 			if (i==str.length()-1) 
 				System.out.println(newStr);			
